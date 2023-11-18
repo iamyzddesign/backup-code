@@ -114,6 +114,7 @@ nav ul li a:hover {
 
 a {
 	color: white;
+	text-decoration: none;
 }
 
 a:hover {
@@ -269,8 +270,9 @@ footer {
 
 .nav-end {
 	display: flex;
-	text-align: center;
-	justify-content: center;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 13px;
@@ -286,6 +288,16 @@ footer {
 
 .nama-nav-end {
 	margin-left: 20px;
+}
+
+.name-catagory {
+	margin-left: 20px;
+	font-size: 11px;
+	font-weight: bold;
+	font-family: sans-serif;
+	color: white;
+	flex-wrap: wrap;
+	margin-top: 50px;
 }
 
 h3 a {
@@ -443,8 +455,6 @@ h3 a {
 	position: relative;
 	background-color: white;
 	transition: box-shadow 0.3s, transform 0.3s;
-	animation: borderAnimation 4s linear infinite;
-	border: 2px solid transparent;
 }
 
 .card-thelatestinstore img {
@@ -504,7 +514,6 @@ h3 a {
 	background: linear-gradient(to bottom, #0073e6, #00b5ff);
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-radius: 30px;
 	width: 300px;
 	height: 70px;
@@ -529,14 +538,24 @@ h3 a {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 20px;
 }
 
 #card-englishposters {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 80px;
+}
+
+#card-adultposters {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#card-romanceposters {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .photo-posters {
@@ -544,16 +563,46 @@ h3 a {
 	height: 95px;
 }
 
+.category {
+	flex-wrap: wrap;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.more-posters {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.btn-moreposters {
+	background-color: rgb(219, 183, 183);
+	padding: 8px;
+	border: 3px solid #23112a;
+	border-radius: 5px;
+}
+
+.btn-moreposters a {
+	color: #23112a;
+}
+
 /* Card Skills */
 #card-myskills {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin-top: 80px;
+	margin-top: 50px;
+}
+
+.logo-skill {
+	width: 50px;
+	height: 50px;
 }
 
 .card {
-	--background: #fff;
+	--background: white;
 	--cardShadow: rgba(32, 33, 37, .1);
 	--cardShadowHover: rgba(0, 0, 0, 0.2);
 	--cardShadowActive: rgba(32, 33, 37, .55);
@@ -581,8 +630,8 @@ h3 a {
 }
 
 .card:hover {
-	transform: translate(-2px, -4px);
-	box-shadow: 16px 16px 0 var(--cardShadowHover);
+	transform: translate(-1px, -3px);
+	box-shadow: 10px 10px 0 var(--cardShadowHover);
 	border: 2px solid #0073e6;
 }
 
@@ -599,11 +648,6 @@ h3 a {
 .description {
 	font-size: 11px;
 	font-weight: bold;
-}
-
-.logo-skill {
-	width: 50px;
-	height: 50px;
 }
 
 .card>.icon,
